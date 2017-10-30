@@ -10,9 +10,37 @@ public class ApiClient : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        StartCoroutine(PostItemApiAsync());
         StartCoroutine(GetItensApiAsync());
+        
 	}
-	
+
+    private IEnumerator PostItemApiAsync()
+    {
+        WWWForm form = new WWWForm();
+
+        form.AddField("Nome", "ItemFromUnity 2");
+        form.AddField("Descricao", "Item enviado por POST para Unity3d (2)");
+        form.AddField("DanoMaximo", "50");
+        form.AddField("Raridade", "9");
+        form.AddField("TipoItemID", "1");
+
+        using (UnityWebRequest request = UnityWebRequest.Post(baseUrl + "/Itens", form))
+        {
+            yield return request.Send();
+
+            if(request.isNetworkError || request.isHttpError)
+            {
+                Debug.Log(request.error);
+            }
+            else
+            {
+                Debug.Log("Envio do item efetuado com sucesso");
+            }
+
+        }
+    }
+
     IEnumerator GetItensApiAsync()
     {
         UnityWebRequest request = UnityWebRequest.Get(baseUrl + "/Itens");
