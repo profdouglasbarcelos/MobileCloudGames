@@ -27,9 +27,14 @@ public class ApiClient : MonoBehaviour
 
         using (UnityWebRequest request = UnityWebRequest.Post(baseUrl + "/Itens", form))
         {
-            yield return request.Send();
+            // obsoleto (Unity 2017.1)
+            //yield return request.Send();
 
-            if(request.isNetworkError || request.isHttpError)
+            // (Unity 2017.2)
+            yield return request.SendWebRequest();
+
+
+            if (request.isNetworkError || request.isHttpError)
             {
                 Debug.Log(request.error);
             }
@@ -44,9 +49,14 @@ public class ApiClient : MonoBehaviour
     IEnumerator GetItensApiAsync()
     {
         UnityWebRequest request = UnityWebRequest.Get(baseUrl + "/Itens");
-        yield return request.Send();
+        
+        // obsoleto (Unity 2017.1)
+        //yield return request.Send();
 
-        if(request.isNetworkError || request.isHttpError)
+        // (Unity 2017.2)
+        yield return request.SendWebRequest();
+
+        if (request.isNetworkError || request.isHttpError)
         {
             Debug.Log(request.error);
         }
