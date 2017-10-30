@@ -18,7 +18,11 @@ public class ApiClient : MonoBehaviour
         //UnityWebRequest request = UnityWebRequest.Get(url + "/1");
         UnityWebRequest request = UnityWebRequest.Get(url);
 
-        yield return request.Send();
+        //obsoleto 
+        //yield return request.Send();
+
+        // novo metodo
+        yield return request.SendWebRequest();
 
         if (request.isNetworkError || request.isHttpError)
         {
