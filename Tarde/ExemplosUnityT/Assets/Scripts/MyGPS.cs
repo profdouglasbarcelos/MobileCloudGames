@@ -26,7 +26,7 @@ public class MyGPS : MonoBehaviour
     {
         if(!Input.location.isEnabledByUser)
         {
-            Debug.Log("Usuario nao permitiu compartilhamento da localizacao");
+            SendInformation("Usuario nao permitiu compartilhamento da localizacao");
             yield break;
         }
 
@@ -46,7 +46,7 @@ public class MyGPS : MonoBehaviour
         // Testando se o servico nao inicializou
         if(maxWait < 1)
         {
-            Debug.Log("Timeout GPS");
+            SendInformation("Timeout GPS");
             yield break;
         }
 
@@ -54,7 +54,7 @@ public class MyGPS : MonoBehaviour
         // houve falha ao inicializar o servico
         if(Input.location.status == LocationServiceStatus.Failed)
         {
-            Debug.Log("Nao foi possivel determinar sua localizacao");
+            SendInformation("Nao foi possivel determinar sua localizacao");
             yield break;
         }
         else
@@ -65,10 +65,16 @@ public class MyGPS : MonoBehaviour
 
             string coordenadas = "Lat: " + latitude + ", Lon: " + longitude;
 
-            Debug.Log(coordenadas);
+            SendInformation(coordenadas);
 
             coordenadasHUD.text = coordenadas;
         }
+    }
+
+    private void SendInformation(string msg)
+    {
+        Debug.Log(msg);
+        coordenadasHUD.text = msg;
     }
 
     // Update is called once per frame
