@@ -11,7 +11,8 @@ public class MyGPS : MonoBehaviour
     public float latitude;
     public float longitude;
 
-    public Text coordenadasHUD;
+    public Text latitudeHUD;
+    public Text longitudeHUD;
 
 	// Use this for initialization
 	void Start ()
@@ -26,7 +27,7 @@ public class MyGPS : MonoBehaviour
     {
         if(!Input.location.isEnabledByUser)
         {
-            SendInformation("Usuario nao permitiu compartilhamento da localizacao");
+            SendInformation(lat: "Usuario nao permitiu compartilhamento da localizacao", lon: string.Empty);
             yield break;
         }
 
@@ -46,7 +47,7 @@ public class MyGPS : MonoBehaviour
         // Testando se o servico nao inicializou
         if(maxWait < 1)
         {
-            SendInformation("Timeout GPS");
+            SendInformation("Timeout GPS", string.Empty);
             yield break;
         }
 
@@ -54,7 +55,7 @@ public class MyGPS : MonoBehaviour
         // houve falha ao inicializar o servico
         if(Input.location.status == LocationServiceStatus.Failed)
         {
-            SendInformation("Nao foi possivel determinar sua localizacao");
+            SendInformation("Nao foi possivel determinar sua localizacao", string.Empty);
             yield break;
         }
         else
@@ -63,18 +64,18 @@ public class MyGPS : MonoBehaviour
             latitude = Input.location.lastData.latitude;
             longitude = Input.location.lastData.longitude;
 
-            string coordenadas = "Lat: " + latitude + ", Lon: " + longitude;
+            string lat = "Lat: " + latitude;
+            string lon = "Lon: " + longitude;
 
-            SendInformation(coordenadas);
-
-            coordenadasHUD.text = coordenadas;
+            SendInformation(lat, lon);
         }
     }
 
-    private void SendInformation(string msg)
+    private void SendInformation(string lat, string lon)
     {
-        Debug.Log(msg);
-        coordenadasHUD.text = msg;
+        Debug.Log(lat + lon);
+        latitudeHUD.text = lat;
+        longitudeHUD.text = lon;
     }
 
     // Update is called once per frame
