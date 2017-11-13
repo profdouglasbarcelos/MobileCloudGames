@@ -9,7 +9,7 @@ public class WebCam : MonoBehaviour
 	void Start ()
     {
         WebCamTexture camTexture = new WebCamTexture();
-        GetComponent<MeshRenderer>().material.mainTexture = camTexture;
+        GetComponent<SkinnedMeshRenderer>().material.mainTexture = camTexture;
         camTexture.Play();
 
         // detectar todas cameras do dispositivo
