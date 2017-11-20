@@ -51,12 +51,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EasyAR\Scripts\ARBuilder.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ARCameraBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ARSceneBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ARSceneTrackerBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\CameraDeviceBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\CloudRecognizerBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\EasyARBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ImageTargetBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ImageTrackerBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ObjectTargetBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\ObjectTrackerBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\QRCodeScannerBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\RealityPlaneBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\RecorderBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\RenderCameraBehaviour.cs" />
+     <Compile Include="Assets\EasyAR\Scripts\VideoPlayerBehaviour.cs" />
      <Compile Include="Assets\Scripts\Acelerometro.cs" />
      <Compile Include="Assets\Scripts\Mic.cs" />
      <Compile Include="Assets\Scripts\MyGPS.cs" />
      <Compile Include="Assets\Scripts\Orbit.cs" />
      <Compile Include="Assets\Scripts\TouchInput.cs" />
      <Compile Include="Assets\Scripts\Webcam.cs" />
+     <None Include="Assets\EasyAR\doc\changelog.cn.txt" />
+     <None Include="Assets\EasyAR\doc\changelog.en.txt" />
+     <None Include="Assets\EasyAR\doc\readme.cn.txt" />
+     <None Include="Assets\EasyAR\doc\readme.en.txt" />
+     <None Include="Assets\EasyAR\Resources\Shaders\TransparentVideo.shader" />
+     <None Include="Assets\EasyAR\Resources\Shaders\RealityPlane.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -89,6 +112,9 @@
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/6458/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="EasyAR.Unity">
+ <HintPath>C:/Users/6458/Documents/Douglas/Projetos/Tarde/ExemplosUnityT/Assets/EasyAR/Scripts/EasyAR.Unity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
