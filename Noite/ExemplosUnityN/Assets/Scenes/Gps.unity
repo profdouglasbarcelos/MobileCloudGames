@@ -271,8 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   latitude: 0
   longitude: 0
-  txtLat: {fileID: 0}
-  txtLon: {fileID: 0}
+  txtLat: {fileID: 1338496181}
+  txtLon: {fileID: 2041589407}
 --- !u!1 &513777734
 GameObject:
   m_ObjectHideFlags: 0
