@@ -55,7 +55,9 @@ public class ApiClient : MonoBehaviour
         Debug.Log("====== Dados objeto ======= ");
         Debug.Log("ID: " + i.ItemID);
         Debug.Log("Nome: " + i.Nome);
-        Debug.Log("Descrição: " + i.Descricao);
+        Debug.Log("Força: " + i.Forca);
+        Debug.Log("Defesa: " + i.Defesa);
+        Debug.Log("Agilidade: " + i.Agilidade);
 
     }
 }

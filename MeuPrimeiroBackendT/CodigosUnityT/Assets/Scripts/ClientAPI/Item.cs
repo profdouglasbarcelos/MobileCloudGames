@@ -7,7 +7,6 @@ public class Item
 {
     public int ItemID;
     public string Nome;
-    public string Descricao;
 
     //public int ItemID
     //{
@@ -28,20 +27,28 @@ public class Item
     //    set { _descricao = value; }
     //}
 
-    private int raridade;
+    private int defesa;
 
-    public int Raridade
+    public int Defesa
     {
-        get { return raridade; }
-        set { raridade = value; }
+        get { return defesa; }
+        set { defesa = value; }
     }
 
-    private int danoMaximo;
+    private int forca;
 
-    public int DanoMaximo
+    public int Forca
     {
-        get { return danoMaximo; }
-        set { danoMaximo = value; }
+        get { return forca; }
+        set { forca = value; }
+    }
+
+    private int agilidade;
+
+    public int Agilidade
+    { 
+        get { return agilidade; }
+        set { agilidade = value; }
     }
 
     private int tipoItemID;
