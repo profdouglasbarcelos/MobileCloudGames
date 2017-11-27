@@ -32,21 +32,30 @@ public class Webcam : MonoBehaviour
     IEnumerator CaptureTextureAsPNG()
     {
         Debug.Log("Apertou");
-
         yield return new WaitForEndOfFrame();
-        Texture2D _TextureFromCamera = 
-            new Texture2D(
-                GetComponent<Renderer>().material.mainTexture.width,
-                GetComponent<Renderer>().material.mainTexture.height
-                );
-        _TextureFromCamera.SetPixels(
-            (GetComponent<Renderer>().material.mainTexture as WebCamTexture).GetPixels());
-        _TextureFromCamera.Apply();
-        byte[] bytes = _TextureFromCamera.EncodeToPNG();
-        string filePath = "SavedScreen1.png";
 
-        File.WriteAllBytes(filePath, bytes);
+        try
+        {
+            Debug.Log("Capturando Tela");
+            Texture2D _TextureFromCamera =
+                new Texture2D(
+                    GetComponent<Renderer>().material.mainTexture.width,
+                    GetComponent<Renderer>().material.mainTexture.height
+                    );
+            _TextureFromCamera.SetPixels(
+                (GetComponent<Renderer>().material.mainTexture as WebCamTexture).GetPixels());
+            _TextureFromCamera.Apply();
+            byte[] bytes = _TextureFromCamera.EncodeToPNG();
+            string filePath = "Foto.png";
 
+            File.WriteAllBytes(filePath, bytes);
+            Debug.Log("Arquivo escrito");
+        }
+        catch (System.Exception ex)
+        {
+
+            Debug.LogWarning(ex.Message);
+        }
     }
 
 

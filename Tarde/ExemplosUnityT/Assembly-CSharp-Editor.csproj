@@ -59,6 +59,7 @@
      <None Include="Assets\EasyAR\Resources\Shaders\TransparentVideo.shader" />
      <None Include="Assets\EasyAR\Resources\Shaders\RealityPlane.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Materials\MeuShader.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -131,6 +132,12 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="EasyAR.Unity">
+ <HintPath>C:/Users/6458/Documents/Douglas/Projetos/Tarde/ExemplosUnityT/Assets/EasyAR/Scripts/EasyAR.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="EasyAR.Unity.Editor">
+ <HintPath>C:/Users/6458/Documents/Douglas/Projetos/Tarde/ExemplosUnityT/Assets/EasyAR/Scripts/Editor/EasyAR.Unity.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/6458/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -145,12 +152,6 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>C:/Users/6458/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="EasyAR.Unity.Editor">
- <HintPath>C:/Users/6458/Documents/Douglas/Projetos/Tarde/ExemplosUnityT/Assets/EasyAR/Scripts/Editor/EasyAR.Unity.Editor.dll</HintPath>
- </Reference>
- <Reference Include="EasyAR.Unity">
- <HintPath>C:/Users/6458/Documents/Douglas/Projetos/Tarde/ExemplosUnityT/Assets/EasyAR/Scripts/EasyAR.Unity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
