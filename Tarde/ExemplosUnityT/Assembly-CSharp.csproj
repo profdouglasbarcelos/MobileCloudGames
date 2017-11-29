@@ -72,7 +72,6 @@
      <Compile Include="Assets\Scripts\Mic.cs" />
      <Compile Include="Assets\Scripts\MyGPS.cs" />
      <Compile Include="Assets\Scripts\Orbit.cs" />
-     <Compile Include="Assets\Scripts\PhotoCaptureExample.cs" />
      <Compile Include="Assets\Scripts\RotateAccelerometer.cs" />
      <Compile Include="Assets\Scripts\TouchInput.cs" />
      <Compile Include="Assets\Scripts\Webcam.cs" />
