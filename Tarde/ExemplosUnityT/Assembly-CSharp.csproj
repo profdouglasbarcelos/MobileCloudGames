@@ -68,6 +68,7 @@
      <Compile Include="Assets\EasyAR\Scripts\RenderCameraBehaviour.cs" />
      <Compile Include="Assets\EasyAR\Scripts\VideoPlayerBehaviour.cs" />
      <Compile Include="Assets\Scripts\Acelerometro.cs" />
+     <Compile Include="Assets\Scripts\CameraLookAtLerp.cs" />
      <Compile Include="Assets\Scripts\Mic.cs" />
      <Compile Include="Assets\Scripts\MyGPS.cs" />
      <Compile Include="Assets\Scripts\Orbit.cs" />
