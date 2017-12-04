@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 1854467168}
   - component: {fileID: 1854467167}
   - component: {fileID: 1854467166}
+  - component: {fileID: 1854467169}
   m_Layer: 0
   m_Name: Mira
   m_TagString: Untagged
@@ -388,3 +389,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854467164}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1854467169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854467164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea80ba20f86412f449eb9276c2036bd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1854467165}
+  cam: {fileID: 1816265488}

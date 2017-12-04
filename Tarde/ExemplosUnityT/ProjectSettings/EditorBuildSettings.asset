@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MyGPS.unity
-    guid: 5cd9da96b81f0014a89385521bed080d
+    path: Assets/Scenes/Network.unity
+    guid: 41f05f8c2cb4f084e81c6ae8cc92e3d6
