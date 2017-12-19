@@ -6,11 +6,12 @@
 
         public string Nome { get; set; }
 
-        public string Descricao { get; set; }
+        public int Forca { get; set; }
 
-        public int Raridade { get; set; }
+        public int Defesa { get; set; }
 
-        public int DanoMaximo { get; set; }
+        public int Agilidade { get; set; }
+
 
         // Relacionamento item -- TipoItem
         public int TipoItemID { get; set; }

@@ -49,7 +49,7 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ItemID,Nome,Descricao,Raridade,DanoMaximo,TipoItemID")] Item item)
+        public ActionResult Create([Bind(Include = "ItemID,Nome,Forca,Defesa,Agilidade,TipoItemID")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ItemID,Nome,Descricao,Raridade,DanoMaximo,TipoItemID")] Item item)
+        public ActionResult Edit([Bind(Include = "ItemID,Nome,Forca,Defesa,Agilidade,TipoItemID")] Item item)
         {
             if (ModelState.IsValid)
             {
