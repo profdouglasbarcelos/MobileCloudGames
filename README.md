@@ -1,5 +1,5 @@
 # MobileCloudGames
-Código criado durante as aulas da turma da 4ª etapa 2018, unidade Santos Andrade, turno noite.
+Código criado durante as aulas
 
 ## Pré Requisitos
 
