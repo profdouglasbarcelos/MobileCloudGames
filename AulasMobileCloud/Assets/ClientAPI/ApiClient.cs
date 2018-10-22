@@ -33,9 +33,9 @@ public class ApiClient : MonoBehaviour
                 RootObject info = JsonUtility.FromJson<RootObject>(response);
                 //RootObject[] info = JsonHelper.getJsonArray<RootObject>(response);
 
-                Debug.Log(info);
+                //Debug.Log(info);
 
-                //Debug.Log("Cidade: " + infoClima.results.city_name);
+                //Debug.Log("Cidade: " + info.results.city_name);
                 //Debug.Log("Temperatura: " + infoClima.results.temp);
             }
         }
