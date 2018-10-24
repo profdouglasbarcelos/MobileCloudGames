@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ClientAPI\ApiClient.cs" />
+     <Compile Include="Assets\ClientAPI\ClientBackend\Modelos\Item.cs" />
+     <Compile Include="Assets\ClientAPI\ClientBackend\Modelos\TipoItem.cs" />
      <Compile Include="Assets\ClientAPI\Models\Forecast.cs" />
      <Compile Include="Assets\ClientAPI\Models\Results.cs" />
      <Compile Include="Assets\ClientAPI\Models\RootObject.cs" />
