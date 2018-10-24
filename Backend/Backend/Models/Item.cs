@@ -1,4 +1,6 @@
-﻿namespace Backend.Models
+﻿using System;
+
+namespace Backend.Models
 {
     public class Item
     {
