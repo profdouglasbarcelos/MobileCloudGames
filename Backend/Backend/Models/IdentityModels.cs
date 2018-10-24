@@ -29,7 +29,5 @@ namespace Backend.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<Backend.Models.TipoItem> TipoItems { get; set; }
     }
 }
