@@ -59,6 +59,7 @@
      <Compile Include="Assets\ClientAPI\Models\Results.cs" />
      <Compile Include="Assets\ClientAPI\Models\RootObject.cs" />
      <Compile Include="Assets\ClientAPI\Utils\JsonHelper.cs" />
+     <Compile Include="Assets\InputScripts\MobileTouchInput.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Douglas/Git/MobileCloudGames/AulasMobileCloud/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
