@@ -2,8 +2,16 @@
 
 public class MobileTouchInput : MonoBehaviour
 {
+    public GameObject cubo;
+
     private bool inTouch = false;
     private Vector2 startPosition;
+
+    void Start()
+    {
+        Instantiate(cubo, transform);
+    }
+
     void Update()
     {
         if (Input.touchCount > 0)
