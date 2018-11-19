@@ -74,6 +74,7 @@
     <Compile Include="Assets\InputScripts\MobileTouchInput.cs" />
     <Compile Include="Assets\InputScripts\TouchInput.cs" />
     <Compile Include="Assets\InputScripts\WebcamInput.cs" />
+    <Compile Include="Assets\Monetization\RewardedVideoAds.cs" />
     <Compile Include="Assets\Monetization\SimpleVideoAds.cs" />
     <None Include="Assets\UnityAds\link.xml" />
     <Reference Include="UnityEditor.StandardEvents">
