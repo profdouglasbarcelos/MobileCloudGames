@@ -70,6 +70,7 @@
     <Compile Include="Assets\ClientAPI\Models\RootObject.cs" />
     <Compile Include="Assets\ClientAPI\Utils\JsonHelper.cs" />
     <Compile Include="Assets\InputScripts\AcelerometerInput.cs" />
+    <Compile Include="Assets\InputScripts\GPSInput.cs" />
     <Compile Include="Assets\InputScripts\MobileTouchInput.cs" />
     <Compile Include="Assets\InputScripts\TouchInput.cs" />
     <Compile Include="Assets\InputScripts\WebcamInput.cs" />
